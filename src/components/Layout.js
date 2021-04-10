@@ -82,6 +82,16 @@ const Layout = ({ children }) => {
       icon: null,
       path: "/signup",
     },
+    {
+      text: "Login",
+      icon: null,
+      path: "/login",
+    },
+    {
+      text: "Forgot password",
+      icon: null,
+      path: "/forgotpassword",
+    },
   ];
 
   return (

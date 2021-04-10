@@ -11,6 +11,9 @@ import LanguageExample from "./pages/LanguageExample";
 import FirebaseAuthHome from "./pages/FirebaseAuthHome";
 import { Signup } from "./pages/Signup";
 import useNotes from "./hooks/useNotes";
+import Login from "./pages/Login";
+import { PrivateRoute } from "./components/PrivateRoute";
+import ForgotPassword from "./pages/ForgotPassword";
 
 const theme = createMuiTheme({
   palette: {
@@ -48,11 +51,15 @@ function App() {
             <Route path="/multilanguage">
               <LanguageExample />
             </Route>
-            <Route path="/firebase">
-              <FirebaseAuthHome />
-            </Route>
+            <PrivateRoute path="/firebase" component={FirebaseAuthHome} />
             <Route path="/signup">
               <Signup />
+            </Route>
+            <Route path="/login">
+              <Login />
+            </Route>
+            <Route path="/forgotpassword">
+              <ForgotPassword />
             </Route>
           </Switch>
         </Layout>
