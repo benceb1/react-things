@@ -14,6 +14,7 @@ import useNotes from "./hooks/useNotes";
 import Login from "./pages/Login";
 import { PrivateRoute } from "./components/PrivateRoute";
 import ForgotPassword from "./pages/ForgotPassword";
+import UpdateProfile from "./pages/UpdateProfile";
 
 const theme = createMuiTheme({
   palette: {
@@ -61,6 +62,7 @@ function App() {
             <Route path="/forgotpassword">
               <ForgotPassword />
             </Route>
+            <PrivateRoute path="/updateprofile" component={UpdateProfile} />
           </Switch>
         </Layout>
       </Router>

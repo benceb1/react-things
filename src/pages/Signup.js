@@ -66,7 +66,7 @@ export const Signup = () => {
           </Card.Body>
         </Card>
         <div className="w-100 text-center mt-2">
-          Already have an account<Link to="/login">Sign Up</Link>
+          Already have an account? <Link to="/login">Sign Up</Link>
         </div>
       </div>
     </Container>
