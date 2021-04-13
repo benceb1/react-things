@@ -6,7 +6,7 @@ import Notes from "./pages/Notes";
 import FormPage from "./pages/FormPage";
 import Layout from "./components/Layout";
 import { createMuiTheme, ThemeProvider } from "@material-ui/core";
-import { purple } from "@material-ui/core/colors";
+import { indigo, purple } from "@material-ui/core/colors";
 import LanguageExample from "./pages/LanguageExample";
 import FirebaseAuthHome from "./pages/FirebaseAuthHome";
 import { Signup } from "./pages/Signup";
@@ -21,7 +21,9 @@ const theme = createMuiTheme({
     primary: {
       main: "#fefefe",
     },
-    secondary: purple,
+    secondary: {
+      main: indigo[500]
+    },
   },
   typography: {
     fontFamily: "Quicksand",
